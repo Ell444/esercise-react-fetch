@@ -12,8 +12,8 @@ function App() {
   const [searchValue, setSearchValue] = useState('');
 
   const fetchData = async () => {
-    const responde = await fetch('https://restcountries.com/v3.1/all');
-    const objArray = await responde.json();
+    const response = await fetch('https://restcountries.com/v3.1/all');
+    const objArray = await response.json();
     setCountries(objArray);
   };
 
